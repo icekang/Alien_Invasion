@@ -6,7 +6,8 @@ class Settings():
 
         #SHIP SETTING
         self.ship_speed_factor = 1.5
-
+        self.ship_limit = 3
+        
         #Bullet Settings
         self.bullet_speed_factor = 3
         self.bullet_width = 3
