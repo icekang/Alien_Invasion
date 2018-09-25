@@ -59,8 +59,8 @@ def check_bullet_alien_collision(ai_settings, screen, stats, sb, ship, aliens, b
     
     #check if dictionary exists
     if collisions:
-        for k in collisions:
-            stats.score += ai_settings.alien_points * len(collisions[k])           
+        for aliens in collisions.values():
+            stats.score += ai_settings.alien_points * len(aliens)           
         
         sb.prep_score()
         
