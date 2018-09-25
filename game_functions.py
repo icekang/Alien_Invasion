@@ -8,6 +8,9 @@ from alien import Alien
 def check_high_score(stats, sb):
     if stats.score > stats.high_score:
         stats.high_score = stats.score
+        f = open('highscore.txt', 'w')
+        f.write(str(stats.high_score))
+        f.close()
         sb.prep_high_score()
 
 def check_events(ai_settings, screen, stats, sb, play_button, ship, aliens, bullets):
