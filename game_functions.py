@@ -55,7 +55,7 @@ def update_bullets(ai_settings, screen, stats, sb, ship, aliens, bullets):
         
 def check_bullet_alien_collision(ai_settings, screen, stats, sb, ship, aliens, bullets):
     #returns dictionary
-    collisions = pygame.sprite.groupcollide(bullets, aliens, True, True)
+    collisions = pygame.sprite.groupcollide(bullets, aliens, False, True)
     
     #check if dictionary exists
     if collisions:
